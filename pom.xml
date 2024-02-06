@@ -10,11 +10,11 @@
 
     <modules>
         <module>mall-common</module>
-<!--        <module>mall-portal</module>-->
+        <module>mall-mbg</module>
+        <module>mall-security</module>
+<!--        <module>mall-demo</module>-->
 <!--        <module>mall-admin</module>-->
 <!--        <module>mall-search</module>-->
-<!--        <module>mall-portal</module>-->
-<!--        <module>mall-portal</module>-->
 <!--        <module>mall-portal</module>-->
     </modules>
 
@@ -96,11 +96,11 @@
                 <artifactId>mall-common</artifactId>
                 <version>${mall-common.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.hnv99.mall</groupId>-->
-<!--                <artifactId>mall-mbg</artifactId>-->
-<!--                <version>${mall-mbg.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.hnv99.mall</groupId>
+                <artifactId>mall-mbg</artifactId>
+                <version>${mall-mbg.version}</version>
+            </dependency>
 <!--            <dependency>-->
 <!--                <groupId>com.hnv99.mall</groupId>-->
 <!--                <artifactId>mall-security</artifactId>-->
