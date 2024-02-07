@@ -18,7 +18,7 @@
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <!-- Overwrite original files when generating mapper.xml -->
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
-        <commentGenerator type="com.macro.mall.CommentGenerator">
+        <commentGenerator type="com.hnv99.mall.CommentGenerator">
             <!-- Whether to prevent the generation of comments -->
             <property name="suppressAllComments" value="true"/>
             <!-- Whether to prevent the generation of comments containing timestamps -->
@@ -29,18 +29,18 @@
         <!-- Configuring the database information that MBG will connect to -->
         <jdbcConnection driverClass="${jdbc.driverClass}"
                         connectionURL="${jdbc.connectionURL}"
-                        userId="${jdbc.userId}"
+                        userId="${jdbc.username}"
                         password="${jdbc.password}">
             <!-- Solve the problem that the code of the specified database is not generated after the mysql driver is upgraded to 8.0 -->
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
         <!-- Used to control the generation of entity classes -->
-        <javaModelGenerator targetPackage="com.macro.mall.model" targetProject="mall-mbg\src\main\java"/>
+        <javaModelGenerator targetPackage="com.hnv99.mall.model" targetProject="mall-mbg/src/main/java"/>
         <!-- Used to control the generation of Mapper.xml files -->
-        <sqlMapGenerator targetPackage="com.macro.mall.mapper" targetProject="mall-mbg\src\main\resources"/>
+        <sqlMapGenerator targetPackage="com.hnv99.mall.mapper" targetProject="mall-mbg/src/main/resources"/>
         <!-- Used to control the generation of Mapper interfaces -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.mapper"
-                             targetProject="mall-mbg\src\main\java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hnv99.mall.mapper"
+                             targetProject="mall-mbg/src/main/java"/>
         <!-- Configure the table to be generated, set tableName to % to generate all tables -->
         <table tableName="%">
             <!-- Used to specify the primary key generation strategy -->
