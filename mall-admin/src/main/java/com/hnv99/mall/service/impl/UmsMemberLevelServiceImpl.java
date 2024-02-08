@@ -5,9 +5,11 @@ import com.hnv99.mall.model.UmsMemberLevel;
 import com.hnv99.mall.model.UmsMemberLevelExample;
 import com.hnv99.mall.service.UmsMemberLevelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UmsMemberLevelServiceImpl implements UmsMemberLevelService {
     @Autowired
     private UmsMemberLevelMapper memberLevelMapper;
