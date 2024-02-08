@@ -6,7 +6,6 @@ import com.hnv99.mall.model.UmsAdmin;
 import com.hnv99.mall.model.UmsResource;
 import com.hnv99.mall.model.UmsRole;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

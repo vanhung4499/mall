@@ -10,12 +10,12 @@ import javax.validation.constraints.NotEmpty;
 @Setter
 public class UpdateAdminPasswordParam {
     @NotEmpty
-    @ApiModelProperty(value = "用户名", required = true)
+    @ApiModelProperty(value = "Username", required = true)
     private String username;
     @NotEmpty
-    @ApiModelProperty(value = "旧密码", required = true)
+    @ApiModelProperty(value = "Old password", required = true)
     private String oldPassword;
     @NotEmpty
-    @ApiModelProperty(value = "新密码", required = true)
+    @ApiModelProperty(value = "New password", required = true)
     private String newPassword;
 }
