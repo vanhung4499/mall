@@ -1,0 +1,30 @@
+package com.hnv99.mall.search.config;
+
+import com.hnv99.mall.common.config.BaseSwaggerConfig;
+import com.hnv99.mall.common.domain.SwaggerProperties;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig extends BaseSwaggerConfig {
+
+    @Override
+    public SwaggerProperties swaggerProperties() {
+        return SwaggerProperties.builder()
+                .apiBasePackage("com.macro.mall.search.controller")
+                .title("Mall Search System")
+                .description("API documentation related to Mall Search")
+                .contactName("macro")
+                .version("1.0")
+                .enableSecurity(false)
+                .build();
+    }
+
+    @Bean
+    public BeanPostProcessor springfoxHandlerProviderBeanPostProcessor() {
+        return generateBeanPostProcessor();
+    }
+}
