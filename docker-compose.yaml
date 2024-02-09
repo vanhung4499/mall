@@ -16,3 +16,19 @@ services:
     container_name: mall-redis
     ports:
       - "6379:6379"
+
+  mall-mongodb:
+    image: mongo:5.0
+    container_name: mall-mongodb
+    ports:
+      - "27017:27017"
+
+  mall-rabbitmq:
+    image: rabbitmq:3.10.5-management
+    container_name: mall-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: mall
+      RABBITMQ_DEFAULT_PASS: mall

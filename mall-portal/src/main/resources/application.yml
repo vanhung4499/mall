@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: mall-portal
+  profiles:
+    active: dev # Default to development environment
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+jwt:
+  tokenHeader: Authorization # The request header where JWT is stored
+  secret: mall-portal-secret # The secret key used for JWT encryption and decryption
+  expiration: 604800 # The expiration time for JWT (60*60*24*7)
+  tokenHead: 'Bearer '  # The prefix in the JWT payload
+
+secure:
+  ignored:
+    urls: # Whitelist of secure paths
+      - /swagger-ui/
+      - /swagger-resources/**
+      - /**/v2/api-docs
+      - /**/*.html
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.map
+      - /favicon.ico
+      - /druid/**
+      - /actuator/**
+      - /sso/**
+      - /home/**
+      - /product/**
+      - /brand/**
+      - /alipay/**
+
+# Custom redis key
+redis:
+  database: mall
+  key:
+    authCode: 'ums:authCode'
+    orderId: 'oms:orderId'
+    member: 'ums:member'
+  expire:
+    authCode: 90 # Expiration time for verification code
+    common: 86400 # 24 hours
+
+mongo:
+  insert:
+    sqlEnable: true # Used to control whether to insert into mongo using database data
+
+# Message queue definition
+rabbitmq:
+  queue:
+    name:
+      cancelOrder: cancelOrderQueue
