@@ -1,0 +1,2 @@
+com.union.mall.common.mybatis.config.MybatisPlusConfig
+com.union.mall.common.mybatis.handler.MyMetaObjectHandler

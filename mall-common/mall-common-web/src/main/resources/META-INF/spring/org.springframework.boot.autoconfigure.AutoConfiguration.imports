@@ -1,0 +1,4 @@
+com.union.mall.common.web.config.WebMvcConfig
+com.union.mall.common.web.config.FeignConfig
+com.union.mall.common.web.exception.GlobalExceptionHandler
+com.union.mall.common.web.aspect.DuplicateSubmitAspect

@@ -1,0 +1,4 @@
+com.union.mall.common.security.service.PermissionService
+com.union.mall.common.security.config.ResourceServerConfig
+com.union.mall.common.security.exception.MyAccessDeniedHandler
+com.union.mall.common.security.exception.MyAuthenticationEntryPoint
