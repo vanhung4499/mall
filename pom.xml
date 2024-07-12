@@ -229,27 +229,27 @@
             <!-- Union API modules -->
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>system-api</artifactId>
+                <artifactId>mall-system</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>oms-api</artifactId>
+                <artifactId>mall-oms</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>pms-api</artifactId>
+                <artifactId>mall-pms</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>ums-api</artifactId>
+                <artifactId>mall-ums</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>sms-api</artifactId>
+                <artifactId>mall-sms</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

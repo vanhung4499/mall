@@ -23,7 +23,7 @@ CREATE TABLE `sys_dept`  (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES (1, 'Youlai Technology', 0, '0', 1, 1, 0, NULL, NULL);
+INSERT INTO `sys_dept` VALUES (1, 'Mall Technology', 0, '0', 1, 1, 0, NULL, NULL);
 INSERT INTO `sys_dept` VALUES (2, 'Research and Development Department', 1, '0,1', 1, 1, 0, NULL, '2022-04-19 12:46:37');
 INSERT INTO `sys_dept` VALUES (3, 'Testing Department', 1, '0,1', 1, 1, 0, NULL, '2022-04-19 12:46:37');
 

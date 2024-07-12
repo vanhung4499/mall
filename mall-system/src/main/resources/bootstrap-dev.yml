@@ -1,0 +1,19 @@
+server:
+  port: 8800
+
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yaml
+        shared-configs[0]:
+          data-id: mall-common.yaml
+          refresh: true
