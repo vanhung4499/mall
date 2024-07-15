@@ -1,8 +1,3 @@
-/*
- Navicat Premium Data Transfer
- Target Server Type    : MySQL
- Date: 20/12/2023 23:12:34
-*/
 use mall_oms;
 
 SET NAMES utf8mb4;

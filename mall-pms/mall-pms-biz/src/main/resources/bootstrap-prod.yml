@@ -1,0 +1,22 @@
+server:
+  port: 8802
+
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: mall-prod
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yaml
+        namespace: mall-prod
+        # public configuration
+        shared-configs[0]:
+          data-id: mall-common.yaml
+          refresh: true

@@ -16,8 +16,6 @@
     <groupId>com.union</groupId>
     <artifactId>mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mall</name>
-    <description>mall</description>
 
     <modules>
         <!-- Base modules -->
@@ -229,27 +227,27 @@
             <!-- Union API modules -->
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>mall-system</artifactId>
+                <artifactId>mall-system-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>mall-oms</artifactId>
+                <artifactId>mall-oms-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>mall-pms</artifactId>
+                <artifactId>mall-pms-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>mall-ums</artifactId>
+                <artifactId>mall-ums-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.union</groupId>
-                <artifactId>mall-sms</artifactId>
+                <artifactId>mall-sms-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

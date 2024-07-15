@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.union.mall.system.api.fallback.UserFeignFallbackClient

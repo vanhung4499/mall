@@ -1,0 +1,19 @@
+server:
+  port: 8801
+
+spring:
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      # Discovery
+      discovery:
+        server-addr: http://localhost:8848
+      # Configuration
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yaml
+        shared-configs[0]:
+          data-id: mall-common.yaml
+          refresh: true

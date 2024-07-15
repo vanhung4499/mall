@@ -1,0 +1,18 @@
+server:
+  port: 9999
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      # Discovery
+      discovery:
+        server-addr: http://localhost:8848
+      # Config
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yaml
+        shared-configs[0]:
+          data-id: mall-common.yaml
+          refresh: true
